@@ -38,6 +38,7 @@ document.getElementById("clearPasswords").addEventListener("click", clearFields)
         document.getElementById("pw3").innerText = "✳️ ✳️ ✳️ "
         document.getElementById("pw4").innerText = "✳️ ✳️ ✳️ "
         document.getElementById("number").value = ''
+        location.reload()
        }
     
         
