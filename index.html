@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
@@ -10,10 +11,10 @@
             <div id = "numberOfCharacters">
                 <h4>How many characters would you like?</h4>
                 <input type = "text" id = "number"></input>
-                <div id="checkboxes">
-                    <label><input type="checkbox" id="letters" name="letters" value="letters">Letters</label>
-                    <label><input type="checkbox" id="lettersNumbers" value="lettersNumbers">Letters and Numbers</label>
-                    <label><input type="checkbox"id="lettersNumbersCharacters"value="lettersNumbersCharacters">Letters, numbers, and characters</label>
+                <div id="radioButtons">
+                    <label><input type="radio" id="letters" name="kindOfPassword" value="letters">Letters</label>
+                    <label><input type="radio" id="lettersNumbers" name="kindOfPassword" value="lettersNumbers">Letters and Numbers</label>
+                    <label><input type="radio"id="lettersNumbersCharacters" name="kindOfPassword" value="lettersNumbersCharacters">Letters, numbers, and characters</label>
                 </div>
             </div>
             <button id = "generator">🔑 Generate Passwords 🔑</button>
