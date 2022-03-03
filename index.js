@@ -12,11 +12,12 @@ document.getElementById("number").addEventListener("keyup", function (event){ //
     })
 
  
-document.getElementById("generator").addEventListener("click", buildPassword())
+document.getElementById("generator").addEventListener("click", chooseSelectedArray())
 
-
-   if (document.getElementById("input[id ='letters']:checked")) {                     //checks to see which radio button was checked 
-        document.getElementById("generator").addEventListener("click", buildPassword(lettersArray))
+function chooseSelectedArray(){
+   if (document.getElementById('letters').value === 'letters') {     //checks to see which radio button was checked 
+       console.log("hi")                    
+        buildPassword(lettersArray)
             
         } else if ("input[id='lettersNumbers']:checked"){
             console.log(lettersNumbersArray)
@@ -25,6 +26,7 @@ document.getElementById("generator").addEventListener("click", buildPassword())
             console.log(allCharactersArray)
             document.getElementById("generator").addEventListener("click", buildPassword(allCharactersArray))
         }
+    }
 
 
 
