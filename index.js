@@ -9,24 +9,31 @@ let selectedButton
 
 document.getElementById("number").addEventListener("keyup", function (event){ //takes in user value from text field
     inputValue = event.target.value 
-    })
+    
+     })
+     const letters = document.getElementById("letters")
+     const lettersNumbers = document.getElementById("lettersNumbers")
+     const lettersNumbersCharacters = document.getElementById("lettersNumbersCharacters")
+
+
+     document.getElementById("generator").addEventListener("click", chooseSelectedArray)
+
+    function chooseSelectedArray(){
+        if (letters.value === "letters") {     //checks to see which radio button was checked 
+            console.log("shit")                    
+             buildPassword(lettersArray)
+                 
+             } else if (lettersNumbers.value === "lettersNumbers"){
+                 console.log("bye")
+                buildPassword(lettersNumbersArray)
+                
+             } else if (lettersNumbersCharacters.value === "lettersNumbersCharacters"){
+                buildPassword(allCharactersArray)
+         }
 
  
-document.getElementById("generator").addEventListener("click", chooseSelectedArray())
 
-function chooseSelectedArray(){
-   if (document.getElementById('letters').value === 'letters') {     //checks to see which radio button was checked 
-       console.log("hi")                    
-        buildPassword(lettersArray)
-            
-        } else if ("input[id='lettersNumbers']:checked"){
-            console.log(lettersNumbersArray)
-            document.getElementById("generator").addEventListener("click", buildPassword(lettersNumbersArray))
-        } else if ("input[id='lettersNumbersCharacters']:checked"){
-            console.log(allCharactersArray)
-            document.getElementById("generator").addEventListener("click", buildPassword(allCharactersArray))
-        }
-    }
+
 
 
 
@@ -53,9 +60,4 @@ document.getElementById("clearPasswords").addEventListener("click", clearFields)
         // document.getElementById("pw4").innerText = "✳️ ✳️ ✳️ "
         // document.getElementById("number").value = ''
         location.reload()
-       }
-    
-   
-   
-
-
+    }}
