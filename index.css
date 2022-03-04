@@ -41,10 +41,6 @@ label {
     margin-bottom: 10px;
 }
 
-/* input[type=checkbox] {
-    margin-right: 8px;
-} */
-
 #generator {
     width: 275px;
     margin-top: 50px;
@@ -56,6 +52,7 @@ label {
     background: aqua;
     font-weight: bold;
 }
+
 #clearPasswords {
     font-weight: light;
     width: 250px;
@@ -65,10 +62,12 @@ label {
     margin-bottom: 1em;
     margin-top: 0;
 }
+
 hr {
     color: white;
     opacity: .6;
 }
+
 button {
     width: 40%;
     margin-top: 20px;
@@ -76,20 +75,19 @@ button {
     margin-right: 10px;
     padding: 3px;
 }
+
 .upperRow, .lowerRow {
    /* border: 1px solid red; */
     display: flex;
     justify-content: space-around;
     margin: 0;
 }
+
 .upperRowCopy, .lowerRowCopy{
     display: flex;
     justify-content: space-around;
     margin-top: 0;
-
 }
-
-
 
 .copy {
     width: 75px;

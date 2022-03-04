@@ -1,4 +1,4 @@
-let characters = []
+
 let password = []
 let inputValue = " "
 let lettersArray = Array.from("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqurtuvwxyz")
@@ -13,7 +13,7 @@ document.getElementById("number").addEventListener("keyup", function (event){ //
     
  document.getElementById("generator").addEventListener('click', chooseSelectedArray )
         let selectedArray
-        const radioButtons = document.querySelectorAll('input[name="kindOfPassword"]');
+        const radioButtons = document.querySelectorAll('input[name="kindOfPassword"]')
     function chooseSelectedArray(){
         for (const radioButton of radioButtons){
             if (radioButton.checked) {
@@ -26,9 +26,9 @@ document.getElementById("number").addEventListener("keyup", function (event){ //
                 }else {
                       selectedArray = allCharactersArray
                 }
-    buildPassword(selectedArray)
+
+                buildPassword(selectedArray)
               }
-              
             }
 
            
@@ -49,3 +49,20 @@ document.getElementById("clearPasswords").addEventListener("click", clearFields)
     function clearFields(){
         location.reload()
     }}
+
+    // WORK ON THIS TOMORROW
+
+    // const copyButtons = document.querySelectorAll('[class="copy"]')
+    // for (const copyButton of copyButtons){
+    //     copyButton.addEventListener("click", copyToClipboard)
+    // }
+
+    // function copyToClipboard() {
+       
+    //      let content = document.getElementById("pw1");
+        
+    //     content.select();
+    //     document.execCommand('copy');
+    
+    //     alert("Copied!");
+    // }
