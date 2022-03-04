@@ -99,4 +99,6 @@ button {
     padding: 3px;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 5px;
+    font-size: smaller;
 }
