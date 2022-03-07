@@ -41,6 +41,7 @@ document.getElementById("number").addEventListener("keyup", function (event){ //
         document.getElementById("pw2").innerText = password.slice(inputValue, (2*inputValue) ).join(" ")
         document.getElementById("pw3").innerText = password.slice((2*inputValue), (3*inputValue)).join(" ")
         document.getElementById("pw4").innerText = password.slice((3*inputValue), (4*inputValue)).join(" ")
+        
         }}
 
 
@@ -50,19 +51,27 @@ document.getElementById("clearPasswords").addEventListener("click", clearFields)
         location.reload()
     }}
 
-    // WORK ON THIS TOMORROW
-
-    // const copyButtons = document.querySelectorAll('[class="copy"]')
-    // for (const copyButton of copyButtons){
-    //     copyButton.addEventListener("click", copyToClipboard)
-    // }
-
-    // function copyToClipboard() {
-       
-    //      let content = document.getElementById("pw1");
-        
-    //     content.select();
-    //     document.execCommand('copy');
     
-    //     alert("Copied!");
-    // }
+
+
+    const copyButtons = document.querySelectorAll('[class="copy"]')
+    const passwordOptions = document.getElementsByClassName("passwordOption")
+
+
+   
+   
+
+    function copyToClipboard(){
+    for (let i=0; i<4; i++){
+        if(copyButtons[i].clicked){
+            console.log(passwordOptions[i].textContent)
+            passwordOptions[i].select()
+            navigator.clipboard.writeText(passwordOptions.textContent)
+            
+           
+        }
+    }
+}
+    
+ 
+    
